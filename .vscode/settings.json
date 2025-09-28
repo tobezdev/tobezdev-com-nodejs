@@ -1,0 +1,6 @@
+{
+    "svelte.plugin.svelte.format.enable": false,
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    }
+}
