@@ -91,7 +91,7 @@ onMount(() => {
 });
 </script>
 
-<div class="relative bg-black overflow-hidden ios-full-height">
+<div class="relative bg-black overflow-hidden ios-full-height navbar-spacing">
     {#if mounted}
         <!-- Animated Background Blurs -->
         <div class="absolute inset-0 isolate">
@@ -292,6 +292,17 @@ onMount(() => {
     /* Force extension beyond viewport to eliminate bottom bar */
     min-height: 100vh;
     min-height: calc(100vh + env(safe-area-inset-bottom));
+}
+
+/* Navbar spacing to prevent overlap */
+.navbar-spacing {
+    padding-top: 60px; /* Default navbar height */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-spacing {
+        padding-top: 56px; /* Mobile navbar height */
+    }
 }
 
 /* Fix mobile blur rendering artifacts */
