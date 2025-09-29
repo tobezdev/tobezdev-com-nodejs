@@ -172,93 +172,278 @@ onMount(() => {
         </div>
     {/if}
 
-    <!-- Content Area -->
-    <div class="relative z-20 flex flex-col items-center justify-center h-full">
-        <div class="text-white text-center px-4 max-w-4xl mx-auto">
-            <div class="relative">
-                <h1
-                    class="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent leading-tight"
-                >
-                    Hey,<br>I'm <span class="chrome-name-overlay"
-                    >tobezdev</span>.
-                </h1>
+    <!-- Home Section -->
+    <section id="home" class="section-container home-section">
+        <div class="relative z-20 flex flex-col items-center justify-center h-full">
+            <div class="text-white text-center px-4 max-w-4xl mx-auto">
+                <div class="relative">
+                    <h1
+                        class="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent leading-tight"
+                    >
+                        Hey,<br>I'm <span class="chrome-name-overlay"
+                        >tobezdev</span>.
+                    </h1>
+                </div>
+                <p class="text-lg text-white/80 mb-8 max-w-2xl">
+                    Full-stack developer passionate about creating beautiful, functional web experiences
+                    with modern technologies and cosmic-inspired design.
+                </p>
             </div>
-        </div>
 
-        <div class="info-grid-container">
-            <div
-                class="info-grid-box info-grid-box-compact"
-                data-box-type="location"
-            >
-                <div class="info-grid-glow"></div>
-                <div class="info-grid-header-with-icon">
-                    <span class="material-icons info-card-icon">place</span>
-                    <h3 class="info-grid-header">Location</h3>
-                </div>
-                <p class="info-grid-content">Hampshire, South England</p>
-            </div>
-            <div
-                class="info-grid-box info-grid-box-large"
-                data-box-type="languages"
-            >
-                <div class="info-grid-glow"></div>
-                <div class="info-grid-header-with-icon">
-                    <span class="material-icons info-card-icon">language</span>
-                    <h3 class="info-grid-header">Languages</h3>
-                </div>
-                <p class="info-grid-content">
-                    English [Native, <a
-                        href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
-                        target="_blank"
-                        class="info-link"
-                    >CEFR Level C2+</a>],<br> German* [<a
-                        href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
-                        target="_blank"
-                        class="info-link"
-                    >CEFR Level A1+</a>]
-                </p>
-                <p class="text-xs text-blue-200 mt-1 opacity-80">
-                    *Learning native Swiss-German; <a
-                        href="https://studyinginswitzerland.com/swiss-german-vs-german-differences/"
-                        target="_blank"
-                        class="info-link"
-                    >see the difference</a>.
-                </p>
-            </div>
-            <div
-                class="info-grid-box info-grid-box-medium"
-                data-box-type="programming"
-            >
-                <div class="info-grid-glow"></div>
-                <div class="info-grid-header-with-icon">
-                    <span class="material-icons info-card-icon">code</span>
-                    <h3 class="info-grid-header">Programming Experience</h3>
-                </div>
-                <p class="info-grid-content">JavaScript, TypeScript, Python</p>
-                <a
-                    class="text-xs text-blue-200 mt-1 opacity-80 info-link"
-                    href="#projects"
+            <div class="info-grid-container">
+                <div
+                    class="info-grid-box info-grid-box-compact"
+                    data-box-type="location"
                 >
-                    See my code in action.
-                </a>
-            </div>
-            <div
-                class="info-grid-box info-grid-box-small"
-                data-box-type="hobbies"
-            >
-                <div class="info-grid-glow"></div>
-                <div class="info-grid-header-with-icon">
-                    <span class="material-icons info-card-icon">interests</span>
-                    <h3 class="info-grid-header">Interests</h3>
+                    <div class="info-grid-glow"></div>
+                    <div class="info-grid-header-with-icon">
+                        <span class="material-icons info-card-icon">place</span>
+                        <h3 class="info-grid-header">Location</h3>
+                    </div>
+                    <p class="info-grid-content">Hampshire, South England</p>
                 </div>
-                <ul class="info-grid-content">
-                    <li>Tech</li>
-                    <li>Gaming</li>
-                    <li>Music Production</li>
-                </ul>
+                <div
+                    class="info-grid-box info-grid-box-large"
+                    data-box-type="languages"
+                >
+                    <div class="info-grid-glow"></div>
+                    <div class="info-grid-header-with-icon">
+                        <span class="material-icons info-card-icon">language</span>
+                        <h3 class="info-grid-header">Languages</h3>
+                    </div>
+                    <p class="info-grid-content">
+                        English [Native, <a
+                            href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
+                            target="_blank"
+                            class="info-link"
+                        >CEFR Level C2+</a>],<br> German* [<a
+                            href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale"
+                            target="_blank"
+                            class="info-link"
+                        >CEFR Level A1+</a>]
+                    </p>
+                    <p class="text-xs text-blue-200 mt-1 opacity-80">
+                        *Learning native Swiss-German; <a
+                            href="https://studyinginswitzerland.com/swiss-german-vs-german-differences/"
+                            target="_blank"
+                            class="info-link"
+                        >see the difference</a>.
+                    </p>
+                </div>
+                <div
+                    class="info-grid-box info-grid-box-medium"
+                    data-box-type="programming"
+                >
+                    <div class="info-grid-glow"></div>
+                    <div class="info-grid-header-with-icon">
+                        <span class="material-icons info-card-icon">code</span>
+                        <h3 class="info-grid-header">Programming Experience</h3>
+                    </div>
+                    <p class="info-grid-content">JavaScript, TypeScript, Python</p>
+                    <a
+                        class="text-xs text-blue-200 mt-1 opacity-80 info-link"
+                        href="#projects"
+                    >
+                        See my code in action.
+                    </a>
+                </div>
+                <div
+                    class="info-grid-box info-grid-box-small"
+                    data-box-type="hobbies"
+                >
+                    <div class="info-grid-glow"></div>
+                    <div class="info-grid-header-with-icon">
+                        <span class="material-icons info-card-icon">interests</span>
+                        <h3 class="info-grid-header">Interests</h3>
+                    </div>
+                    <ul class="info-grid-content">
+                        <li>Tech</li>
+                        <li>Gaming</li>
+                        <li>Music Production</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container about-section">
+        <div class="section-content">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Getting to know tobezdev</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <span class="material-icons">psychology</span>
+                    </div>
+                    <h3>Background</h3>
+                    <p>Passionate developer with a love for creating innovative solutions and beautiful user experiences. Always learning and exploring new technologies.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <span class="material-icons">school</span>
+                    </div>
+                    <h3>Learning Journey</h3>
+                    <p>Self-taught developer who believes in continuous learning. Currently expanding skills in modern web frameworks and cloud technologies.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <span class="material-icons">rocket_launch</span>
+                    </div>
+                    <h3>Mission</h3>
+                    <p>To build applications that not only function well but also provide delightful user experiences through thoughtful design and clean code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container projects-section">
+        <div class="section-content">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <span class="material-icons">web</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <span class="material-icons">link</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive portfolio built with SvelteKit featuring glassmorphism design and smooth animations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SvelteKit</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <span class="material-icons">dashboard</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <span class="material-icons">link</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Task Manager App</h3>
+                    <p>A full-stack task management application with real-time updates and collaborative features.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <span class="material-icons">analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <span class="material-icons">link</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Data Visualization Tool</h3>
+                    <p>Interactive data visualization dashboard for analyzing complex datasets with beautiful charts and insights.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container contact-section">
+        <div class="section-content">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="material-icons">email</span>
+                        </div>
+                        <h3>Email</h3>
+                        <p>hello@tobezdev.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="material-icons">code</span>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>github.com/tobezdev</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <span class="material-icons">work</span>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/tobezdev</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="glass-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="material-icons">send</span>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <style>
@@ -275,14 +460,17 @@ onMount(() => {
     }
 }
 
-/* Mobile-specific fixes */
+/* Global styles and smooth scrolling */
+:global(html) {
+    scroll-behavior: smooth;
+}
+
 :global(html, body) {
-    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background: black;
     -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
 }
 
 /* iOS Safari bottom bar fix */
@@ -694,6 +882,399 @@ span.chrome-name-overlay::after {
 
     .info-grid-content {
         font-size: 0.85rem;
+    }
+}
+
+/* Section Layouts */
+.section-container {
+    min-height: 100vh;
+    position: relative;
+    z-index: 20;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 6rem 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        90deg,
+        #ff0057,
+        #fffa00,
+        #00ff85,
+        #00cfff,
+        #a700ff,
+        #ff0057
+    );
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: chroma-rainbow 5s linear infinite;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* About Section Styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-card {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.15) 0%,
+        rgba(147, 51, 234, 0.12) 50%,
+        rgba(59, 130, 246, 0.18) 100%
+    );
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.about-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.about-card-icon .material-icons {
+    font-size: 2rem;
+    color: white;
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* Projects Section Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.15) 0%,
+        rgba(147, 51, 234, 0.12) 50%,
+        rgba(59, 130, 246, 0.18) 100%
+    );
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+    border-radius: 12px;
+}
+
+.project-icon .material-icons {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(59, 130, 246, 0.3);
+    transform: scale(1.1);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.project-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(59, 130, 246, 0.2);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Contact Section Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.15) 0%,
+        rgba(147, 51, 234, 0.12) 50%,
+        rgba(59, 130, 246, 0.18) 100%
+    );
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-card:hover {
+    transform: translateX(8px);
+    border-color: rgba(59, 130, 246, 0.6);
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.contact-icon .material-icons {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 0.25rem 0;
+}
+
+.contact-card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* Contact Form Styles */
+.glass-form {
+    background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.15) 0%,
+        rgba(147, 51, 234, 0.12) 50%,
+        rgba(59, 130, 246, 0.18) 100%
+    );
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(147, 51, 234, 0.8));
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Responsive Design for Sections */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-section, .projects-section, .contact-section {
+        padding: 4rem 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .about-card,
+    .project-card,
+    .glass-form {
+        padding: 1.5rem;
     }
 }
 </style>
